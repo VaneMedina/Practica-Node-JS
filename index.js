@@ -9,6 +9,6 @@ app.use(express.json())
 app.use(express.urlencoded({ extended : true}))
 
 //app.use("/static", express.static(path.join(__dirname, 'public')))
-app.use("/api/products", products)
+app.use("/api/productos", products)
 
 app.listen(PORT, () => {console.log(`escuchando en el puerto ${PORT}`)})

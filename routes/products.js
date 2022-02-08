@@ -43,7 +43,7 @@ router.get("/", (req, res) =>{
     res.status(200).send(products)
 })
 
-router.get("/productos", (req, res)=>{
+router.get("/nuevo", (req, res)=>{
     res.sendFile(path.join(__dirname, "../public/productos.html"))
 })
 
