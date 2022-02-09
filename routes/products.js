@@ -1,24 +1,10 @@
-const multer = require('multer')
 const express = require('express')
+const upload = require('../multer')
 const path = require('path')
 const { Router } = express
+const router = Router()
 const Contenedor = require('../models/contenedor');
 const instancia = new Contenedor("./database/products.json");
-
-//instancia.getAll().then(products => console.log(products));
-
-
-const storage = multer.diskStorage({
-    destination: (req, file, cb) => {
-        cb(null, path.join(__dirname, ("../public/img")))
-    },
-    filename: (req, file, cb) => {
-        cb(null, file.originalname)
-    }
-})
-
-const upload = multer({ storage })
-const router = Router()
 
 router.get("/", async (req, res) =>{
     const productos = await instancia.getAll().then(products => {return products});
@@ -29,6 +15,7 @@ router.get("/nuevo", (req, res)=>{
     res.sendFile(path.join(__dirname, "../public/productos.html"))
 })
 
+//GET BY ID
 router.get("/:id", async (req, res) =>{
     const product = await instancia.getById(req.params.id).then(product => {return product});
     if(!product){
@@ -37,8 +24,6 @@ router.get("/:id", async (req, res) =>{
     }
     res.send(product);
 })
-
-//POST
 
 const validacionId = async () =>{
     let id = 1;
@@ -52,8 +37,9 @@ const validacionId = async () =>{
     return id;
 }
 
+//POST
 router.post("/", upload.single("thumbnail"), async (req, res) =>{
-    const thumbnail = path.join(__dirname, "../public/img/"+ req.file)
+    const thumbnail = path.join(__dirname, "../public/img/"+req.file)
     const { title, price } = req.body;
     let id = await validacionId();
     const product = await instancia.save({id, title, price, thumbnail})

@@ -34,5 +34,29 @@
     "title": "toalla update 6",
     "price": 600,
     "thumbnail": "toalla update 6"
+  },
+  {
+    "id": 7,
+    "title": "rollo de cocina",
+    "price": "200",
+    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\[object Object]"
+  },
+  {
+    "id": 8,
+    "title": "rollo de cocina",
+    "price": "200",
+    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\[object Object]"
+  },
+  {
+    "id": 9,
+    "title": "rollo de cocina",
+    "price": "200",
+    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\[object Object]"
+  },
+  {
+    "id": 10,
+    "title": "café",
+    "price": 250,
+    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
   }
 ]
