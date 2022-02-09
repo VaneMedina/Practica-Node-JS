@@ -63,9 +63,9 @@ router.post("/", upload.single("thumbnail"), async (req, res) =>{
 })
 
 //PUT
-/*router.put("/:id", (req, res) =>{
-    const product = await instancia.update(product).then(product => {return product});
-    //const product = products.find(product => product.id == req.params.id)
+router.put("/:id", async(req, res) =>{
+    const productos = await instancia.getAll().then(products => {return products});
+    const product = productos.find(product => product.id == req.params.id);
     if(!product){
         res.status(404).send({ error : 'Producto no encontrado' })
         return
@@ -74,8 +74,10 @@ router.post("/", upload.single("thumbnail"), async (req, res) =>{
     product.title = title;
     product.price = price;
     product.thumbnail = thumbnail;
-    res.sendStatus(200)
-})*/
+    await instancia.update(product)
+    console.log(product)
+    res.sendStatus(200);
+})
 
 //DELETE BY ID
 router.delete("/:id", (req, res) =>{
@@ -88,5 +90,3 @@ router.delete("/:id", (req, res) =>{
 })
 
 module.exports = router
-
-//res.send(movies.filter(m => m.title.includes(title)))

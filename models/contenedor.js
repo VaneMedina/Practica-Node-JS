@@ -37,9 +37,8 @@ class Contenedor{
         try{
             const dataFile = await fs.readFile(this.nameFile);
             const data = JSON.parse(dataFile);
-            product.title = 
+            data.splice(1, 1, product);
             await fs.writeFile(this.nameFile, JSON.stringify(data, null, 2), 'utf-8');
-            return product;
         }catch(error){
             console.log(error);
         }
