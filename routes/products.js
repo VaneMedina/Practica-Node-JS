@@ -2,8 +2,8 @@ const multer = require('multer')
 const express = require('express')
 const path = require('path')
 const { Router } = express
-const Contenedor = require('./contenedor');
-const instancia = new Contenedor("./routes/products.json");
+const Contenedor = require('../models/contenedor');
+const instancia = new Contenedor("./database/products.json");
 
 //instancia.getAll().then(products => console.log(products));
 let id = 0;
@@ -41,13 +41,11 @@ router.get("/:id", async (req, res) =>{
 })
 
 //POST
-
 router.post("/", upload.single("thumbnail"), async (req, res) =>{
     const thumbnail = path.join(__dirname, "../public/img/"+ req.file)
     const { title, price } = req.body
     //products.push({id, title, price, thumbnail})
     id +=1;
-    console.log(id)
     const product = await instancia.save({id, title, price, thumbnail})
     if(product){
         res.status(201).send(product);
@@ -55,7 +53,7 @@ router.post("/", upload.single("thumbnail"), async (req, res) =>{
 })
 
 //PUT
-router.put("/:id", (req, res) =>{
+/*router.put("/:id", (req, res) =>{
     const product = await instancia.update(product).then(product => {return product});
     //const product = products.find(product => product.id == req.params.id)
     if(!product){
@@ -67,9 +65,9 @@ router.put("/:id", (req, res) =>{
     product.price = price;
     product.thumbnail = thumbnail;
     res.sendStatus(200)
-})
+})*/
 
-//DELETE
+//DELETE BY ID
 router.delete("/:id", (req, res) =>{
     const productDelete = instancia.deleteById(req.params.id);
     if(!productDelete){
