@@ -1,25 +1,43 @@
 [
   {
-    "id": 10,
-    "title": "jabon en pan",
-    "price": 100,
-    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
-  },
-  {
-    "id": 11,
-    "title": "jabon en pan",
-    "price": 100,
-    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
-  },
-  {
-    "id": 12,
-    "title": "jabon en pan",
-    "price": 100,
-    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
-  },
-  {
     "id": 1,
-    "title": "jabon en pan",
+    "title": "jabon liquido",
+    "price": 100,
+    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
+  },
+  {
+    "id": 2,
+    "title": "jabon liquido",
+    "price": 100,
+    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
+  },
+  {
+    "id": 3,
+    "title": "jabon liquido",
+    "price": 100,
+    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
+  },
+  {
+    "id": 4,
+    "title": "jabon liquido",
+    "price": 100,
+    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
+  },
+  {
+    "id": 5,
+    "title": "jabon liquido",
+    "price": 100,
+    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
+  },
+  {
+    "id": 6,
+    "title": "jabon liquido",
+    "price": 100,
+    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
+  },
+  {
+    "id": 7,
+    "title": "jabon liquido",
     "price": 100,
     "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
   }
