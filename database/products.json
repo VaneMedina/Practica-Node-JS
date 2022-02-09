@@ -7,9 +7,9 @@
   },
   {
     "id": 2,
-    "title": "Jabon liquido update",
-    "price": 400,
-    "thumbnail": "Imagen update"
+    "title": "jabon liquido",
+    "price": 100,
+    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
   },
   {
     "id": 3,
@@ -25,20 +25,14 @@
   },
   {
     "id": 5,
-    "title": "jabon liquido",
-    "price": 100,
-    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
+    "title": "Jabon liquido update 5",
+    "price": 600,
+    "thumbnail": "Imagen update 5"
   },
   {
     "id": 6,
-    "title": "jabon liquido",
-    "price": 100,
-    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
-  },
-  {
-    "id": 7,
-    "title": "jabon liquido",
-    "price": 100,
-    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
+    "title": "toalla update 6",
+    "price": 600,
+    "thumbnail": "toalla update 6"
   }
 ]
