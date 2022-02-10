@@ -4,8 +4,8 @@
 
 ## Project setup
 
-###Primero -> npm install express
+### Primero -> npm install express
 
-###Segundo -> npm install (para descargar las dependencias especificadas en el package.json)
+### Segundo -> npm install (para descargar las dependencias especificadas en el package.json)
 
-###Último -> ¡Ejecutar! -> npm start
+### Último -> ¡Ejecutar! -> npm start
