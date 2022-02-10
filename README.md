@@ -1,6 +1,6 @@
 # Node JS
 
-<code><img height="270px" width="480px" src="https://raw.githubusercontent.com/VaneMedina/Tienda/master/images/img-page.jpeg"></code>
+<code><img height="270px" width="480px" src="https://github.com/VaneMedina/Practica-Node-JS/blob/master/public/img/jim.gif"></code>
 
 ## Project setup
 
