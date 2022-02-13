@@ -1,0 +1,18 @@
+extends layout/base.pug
+block content
+    section 
+        div(class="container")
+            div(class="row") 
+                div(class="col-12 my-5 text-center")
+                    h1 Productos
+                each producto in products 
+                    div(class="col-lg-3 col-md-6") 
+                        a(href="#" class="card h-100") 
+                            div(class="text-center")
+                                img(alt="" width="130" height="130" src=producto.thumbnail)
+                                div(class="text-center")
+                                    h3(class="h4 color-blue-50 mt-4")= producto.title 
+                                    h4(class="h4 color-blue-50 mt-4")= producto.price 
+                else 
+                    h4 No hay productos
+

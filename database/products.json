@@ -1,62 +1,38 @@
 [
   {
     "id": 1,
-    "title": "jabon liquido",
-    "price": 100,
-    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
+    "title": "Pan de molde",
+    "price": "350",
+    "thumbnail": "\\static\\img\\thumbnail-1644607581420pan.png"
   },
   {
     "id": 2,
-    "title": "jabon liquido",
-    "price": 100,
-    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
+    "title": "Rollo de cocina",
+    "price": "200",
+    "thumbnail": "\\static\\img\\thumbnail-1644607631418rollo-cocina.png"
   },
   {
     "id": 3,
-    "title": "jabon liquido",
-    "price": 100,
-    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
+    "title": "Medialunas",
+    "price": "150",
+    "thumbnail": "\\static\\img\\thumbnail-1644608400384medialunas.png"
   },
   {
     "id": 4,
-    "title": "jabon liquido",
-    "price": 100,
-    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
+    "title": "Sandwich de miga",
+    "price": "220",
+    "thumbnail": "\\static\\img\\thumbnail-164461347533000007426.jpg"
   },
   {
     "id": 5,
-    "title": "Jabon liquido update 5",
-    "price": 600,
-    "thumbnail": "Imagen update 5"
+    "title": "Sandwich de miga",
+    "price": "220",
+    "thumbnail": "\\static\\img\\thumbnail-164461351601500007426.jpg"
   },
   {
     "id": 6,
-    "title": "toalla update 6",
-    "price": 600,
-    "thumbnail": "toalla update 6"
-  },
-  {
-    "id": 7,
-    "title": "rollo de cocina",
-    "price": "200",
-    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\[object Object]"
-  },
-  {
-    "id": 8,
-    "title": "rollo de cocina",
-    "price": "200",
-    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\[object Object]"
-  },
-  {
-    "id": 9,
-    "title": "rollo de cocina",
-    "price": "200",
-    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\[object Object]"
-  },
-  {
-    "id": 10,
-    "title": "café",
-    "price": 250,
-    "thumbnail": "C:\\Users\\Usuario\\Documents\\coder\\multer-router\\public\\img\\undefined"
+    "title": "Medialunas",
+    "price": "120",
+    "thumbnail": "\\static\\img\\thumbnail-1644720365407medialunas.png"
   }
 ]

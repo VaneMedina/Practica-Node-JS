@@ -1,0 +1,14 @@
+html 
+    head
+        link(rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" type="text/css")
+        link(rel="stylesheet" href="/static/css/style.css" type="text/css")
+    body
+    section
+        div(class="container")
+            nav(class="bg-success")
+                ul(class="nav d-flex justify-content-center my-4")  
+                    li(class="nav-item") 
+                        a(href="/productos", class="nav-link text-white") Productos
+                    li(class="nav-item") 
+                        a(href="/", class="nav-link text-white") Agregar producto
+        block content

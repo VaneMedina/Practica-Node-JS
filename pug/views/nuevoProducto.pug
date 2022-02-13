@@ -1,0 +1,17 @@
+extends layout/base.pug
+block content
+    section 
+        div(class="container")
+            h1(class="my-5")  Agregar productos:
+            form(action="/productos" enctype="multipart/form-data" method="post" class="row g-3")
+                div(class="col-md-6")
+                    label(for="inputName" class="form-label") 
+                    input(name="title" type="text" id="inputName" class="form-control")
+                div(class="col-md-6")
+                    label(for="inputPrice" class="form-label") 
+                    input(name="price" type="number" id="inputPrice" class="form-control")
+                div(class="col-12")
+                    label(for="thumbnail" class="form-label") 
+                    input(name="thumbnail" type="file" id="inputAddress" class="form-control")
+                div(class="col-12")
+                    button(type="submit" class="btn btn-success btn-lg mt-3") Enviar producto ❤
