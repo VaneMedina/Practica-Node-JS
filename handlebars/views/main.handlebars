@@ -1,0 +1,22 @@
+<section>
+    <div class="container">
+        <div class="row"> 
+            {{#each productos}}
+                <div class="col d-flex justify-content-center">
+                    <div class="card ">
+                        <img src={{this.thumbnail}}  alt="imagen producto",class="card-img">
+                        <div class="card-body">
+                            <h4 class="card-title">{{this.title}}</h4>
+                            <h5 class="card-text">{{this.price}}</h5>
+                        </div>
+                    </div>
+                </div>
+            {{/each}}
+            {{#unless productos}}
+                <div class="col-12 my-5 text-center">
+                    <h4 class="title"> No se encontraron productos disponibles </h4>
+                </div>
+            {{/unless}}
+        </div>
+    </div>
+</section> 

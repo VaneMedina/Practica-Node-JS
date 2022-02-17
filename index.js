@@ -11,6 +11,19 @@ ejsEngine(app);
 //const pugRouter = require('./pug/routes/pug');
 const ejsRouter = require('./ejs/routes/ejs');
 
+/**HANDLEBARS
+ * 
+app.engine('handlebars', engine({
+  layoutsDir: path.join(__dirname, 'views/layouts'),
+  defaultLayout: 'index'
+}));
+
+// app.set('views', './views')
+app.set('view engine', 'handlebars')
+
+app.use("/static", express.static(path.join(__dirname, 'public')))
+app.use("/", homeRouter);
+ */
 
 //middlewares
 app.use(express.json())
